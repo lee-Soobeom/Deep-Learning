@@ -1,0 +1,68 @@
+##2장
+####numpy
+""" 
+import numpy as np
+
+x = np.array(0) %scalar
+
+y = np.array([0, 1]) %vector
+
+z = np.array([[0,1],[2,3]]) %matrix
+
+"""
+
+- .shape
+- .ndim
+- .dtype
+- .random
+- .zeros
+- .ones
+- .reshape
+- .transpose
+
+####matplotlib
+"""
+import matplotlib.pyplot as plt
+
+plt.imshow()
+plt.show()
+"""
+
+####batch
+-slice
+"""
+data.shape %(1000, 100, 100)
+
+slice =data[:100, :, :]
+
+slice.shape %(100, 100, 100)
+"""
+
+####broadcasting
+-차원이 다른 두 행렬을 연산할때 차원을 늘려 연산이 가능하도록 만드는 것
+
+####Gradient Descent Method(경사하강법)
+-1차 미분으로 최적화된 기울기를 구하는 방법
+
+####(class)Dense
+-가중치(w)와 편향(b)로 연산하는 층을 구현 
+
+####(class)Sequential
+-layers를 parameter로 받아 연산, 이 때 parameter는 Dense()를 사용.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
