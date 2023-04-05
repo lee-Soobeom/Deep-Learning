@@ -51,7 +51,25 @@ slice.shape %(100, 100, 100)
 -layers를 parameter로 받아 연산, 이 때 parameter는 Dense()를 사용.
 
 
+##3장
+####API
+"""
+from tensorflow.keras import models
+from tensorflow.keras import layers
 
+model = keras.Sequential([keras.laers.Dense( )]) %층
+
+model.compile() %학습률, 손실함수 등 학습 과정 설정
+
+train = model.fit() %epochs, batch 등 학습량 설정
+
+predictions = model.predict() %훈련한 모델 사용
+"""
+-Dense
+-Sequential
+-.compile
+-.fit
+-.predict
 
 
 
