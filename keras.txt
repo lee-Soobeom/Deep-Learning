@@ -3,11 +3,11 @@
 """ 
 import numpy as np
 
-x = np.array(0) %scalar
+x = np.array(0) #scalar
 
-y = np.array([0, 1]) %vector
+y = np.array([0, 1]) #vector
 
-z = np.array([[0,1],[2,3]]) %matrix
+z = np.array([[0,1],[2,3]]) #matrix
 
 """
 
@@ -31,11 +31,11 @@ plt.show()
 ####batch
 -slice
 """
-data.shape %(1000, 100, 100)
+data.shape #(1000, 100, 100)
 
 slice =data[:100, :, :]
 
-slice.shape %(100, 100, 100)
+slice.shape #(100, 100, 100)
 """
 
 ####broadcasting
@@ -57,27 +57,36 @@ slice.shape %(100, 100, 100)
 from tensorflow.keras import models
 from tensorflow.keras import layers
 
-model = keras.Sequential([keras.laers.Dense( )]) %층
+model = keras.Sequential([keras.laers.Dense( )]) #층
 
-model.compile() %학습률, 손실함수 등 학습 과정 설정
+model.compile() #학습률, 손실함수 등 학습 과정 설정
 
-train = model.fit() %epochs, batch 등 학습량 설정
+train = model.fit() #epochs, batch 등 학습량 설정
 
-predictions = model.predict() %훈련한 모델 사용
+predictions = model.predict() #훈련한 모델 사용
 """
--Dense
--Sequential
--.compile
--.fit
--.predict
+-tf.keras.layers.Dense
+-tf.keras.Sequential
+-tf.keras.Model
+	-.compile
+	-.fit
+	-.predict
 
 
+##4장
+####분류와 회귀
+"""
+from tensorflow.keras.datasets import imdb #의견 분류(이진 분류)
+
+from tensorflow.keras.datasets import reuters #뉴스 토픽 분류
+
+from tensorflow.keras.datasets import boston_housing #주택 가격 회귀
+"""
+-tf.keras.datasets : module, small NumPy datasets 
+-.get_word_index : the word index dictionary. keys are word strings, values are their index
 
 
-
-
-
-
+#출처 : https://www.tensorflow.org/api_docs/python/tf/keras
 
 
 
